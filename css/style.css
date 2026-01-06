@@ -1,0 +1,92 @@
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #1e90ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #87cefa;
+    color: white;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    color: #1e90ff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.car-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background: #1e90ff;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
