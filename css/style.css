@@ -1,92 +1,130 @@
-/* Reset & Basic Styles */
+/* -------- GOOGLE FONTS -------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* -------- GLOBAL -------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Open Sans', sans-serif;
+  background: #F5F5F5;
+  color: #1A1A1A;
+  line-height: 1.7;
 }
 
+/* -------- HEADER -------- */
 header {
-    background: #1e90ff;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+  background: #1E73BE;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
+/* -------- NAV -------- */
 nav ul {
-    list-style: none;
-    display: flex;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-    margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* -------- HERO -------- */
 .hero {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #87cefa;
-    color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(90deg,#1E73BE,#6CB8FF);
+  color: white;
 }
 
-.hero .btn {
-    display: inline-block;
-    margin: 1rem;
-    padding: 0.8rem 1.5rem;
-    background: #fff;
-    color: #1e90ff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.hero h1 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-section {
-    padding: 2rem;
+.cta-buttons .btn {
+  display: inline-block;
+  margin: .7rem;
+  padding: .9rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn {
+  background: #FFB703;
+  color: #1A1A1A;
+}
+
+.btn.secondary {
+  background: white;
+  color: #1E73BE;
+}
+
+/* -------- CARS SECTION -------- */
+#cars {
+  padding: 2rem;
 }
 
 .car-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.5rem;
 }
 
 .car-item {
-    background: white;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  text-align: center;
 }
 
 .car-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
+/* -------- FOOTER -------- */
 footer {
-    text-align: center;
-    background: #1e90ff;
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: #1E73BE;
+  color: white;
+  font-size: .9rem;
+}
+
+/* -------- MOBILE -------- */
+@media(max-width:768px){
+  header{
+    flex-direction: column;
+  }
+
+  nav ul{
+    margin-top: 1rem;
+  }
 }
